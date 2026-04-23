@@ -25,13 +25,13 @@ class BlinkyNode(Node):
         # Cycle through Red, Yellow, Green
         if self.state == 0:
             msg.data = [1, 0, 0]
-            led_name = "RED"
+            led_name = "YELLOW"
         elif self.state == 1:
             msg.data = [0, 1, 0]
-            led_name = "YELLOW"
+            led_name = "GREEN"
         else:
             msg.data = [0, 0, 1]
-            led_name = "GREEN"
+            led_name = "RED"
 
         self.publisher_.publish(msg)
         self.get_logger().info(f"Toggled LED: {led_name}")
