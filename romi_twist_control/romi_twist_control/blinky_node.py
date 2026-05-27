@@ -1,3 +1,11 @@
+# Author:       Lebron James
+# Date:         6/7/1337
+# Assignment:   Lab 420
+# YouTube Link: https://youtu.be/Aq5WXmQQooo?si=Sp3nvqiB-NT2zKKs
+#
+# This Python Node:
+# When spun, this node will publish to /leds, periodically toggling the Romi32U4 LEDs
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16MultiArray
